@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <!--  Document on ready loaded after jQuery is loaded to let page load -->
+    <script> $(document).ready(function () { });</script>
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Added a link to Font Awesome CDN-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Added a link to a local copy of the Meyerweb reset code-->
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <!-- Added a link to a local css file for this page-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+      
+    <div class="container">
+
+        <!-- Header -->
+        <div class="card text-center">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <h1 class="card-title">Totally Trivial Trivia Game</h1>
+                <p class="card-text">Play it if you dare.</p>
+
+                <a href="#" class="btn btn-primary" id="start">Start Game</a>
+                <div id="numCorrectAnswers">Number of Correct Answers: 0</div>
+                <div id="numWrongAnswers">Number of Wrong Answers: 0</div>
+                <div id="numNoAnswers">Number of Unanswered Questions: 0</div>
+
+                <div id="message"></div>
+
+            </div> 
+            <div class="card">
+                <div class="card-body">
+                    <div id="timer"></div>
+                    <div id="question">Question</div>
+                    <button type="button" class="btn btn-outline-success btn-lg btn-block answerButton" id="answer1"
+                        value="0">Answer1</button>
+                    <button type="button" class="btn btn-outline-success btn-lg btn-block answerButton" id="answer2"
+                        value="1">Answer2</button>
+                    <button type="button" class="btn btn-outline-success btn-lg btn-block answerButton" id="answer3"
+                        value="2">Answer3</button>
+                    <button type="button" class="btn btn-outline-success btn-lg btn-block answerButton" id="answer4"
+                        value="3">Answer4</button>
+                </div>
+            </div>
+            <div class="card" style="width: auto">
+                <div class="card-img-top" id="imageHolder"></div>
+                <div class="card-body">
+                    <p id="imageText" class="card-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+
+
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
